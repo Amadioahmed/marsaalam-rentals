@@ -1,0 +1,120 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif; /* A clean, readable font */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text color */
+    line-height: 1.6; /* Spacing between lines of text */
+}
+
+/* Header Styling */
+header {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Top/bottom padding */
+    text-align: center; /* Center align text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin for h1 */
+    font-size: 2.5em; /* Larger font size */
+}
+
+header p {
+    font-size: 1.1em; /* Slightly larger text for description */
+}
+
+/* Main Content Area */
+.room-listings {
+    display: flex; /* Use flexbox for responsive layout */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px; /* Padding around the content */
+    gap: 20px; /* Space between room cards */
+    max-width: 1200px; /* Max width of content */
+    margin: 20px auto; /* Center the content block */
+}
+
+/* Individual Room Card Styling */
+.room-card {
+    background-color: #fff; /* White background for each card */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow */
+    overflow: hidden; /* Hide anything outside the card's bounds */
+    width: 100%; /* Full width on small screens */
+    max-width: 350px; /* Max width for individual cards */
+    text-align: center; /* Center text within the card */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.room-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.room-card img {
+    width: 100%; /* Make image fill card width */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop image to fit without distortion */
+    display: block; /* Remove extra space below image */
+}
+
+.room-card h2 {
+    color: #0056b3; /* Blue heading color */
+    margin: 15px 10px 5px; /* Spacing for heading */
+    font-size: 1.8em;
+}
+
+.room-card p {
+    padding: 0 15px 15px; /* Padding around description */
+    font-size: 0.95em;
+}
+
+/* Details Button Styling */
+.details-button {
+    display: inline-block; /* Allows padding and margin */
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text on button */
+    padding: 10px 20px; /* Button padding */
+    margin-bottom: 15px; /* Space below button */
+    border-radius: 5px; /* Rounded button corners */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.details-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding for footer */
+    margin-top: 30px; /* Space above footer */
+    font-size: 0.9em; /* Smaller font size for footer */
+}
+
+footer p {
+    margin: 5px 0; /* Spacing for footer paragraphs */
+}
+
+/* Basic Responsive Adjustments (Optional but good practice) */
+@media (max-width: 768px) {
+    .room-card {
+        max-width: 300px; /* Smaller max-width on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em; /* Smaller font on phones */
+    }
+
+    .room-listings {
+        padding: 10px; /* Less padding on very small screens */
+    }
+}
